@@ -3,8 +3,7 @@ import { Button, Contact, ContactsList } from "./ListContacts.styled";
 
 class ListContacts extends Component {   
 
-  componentDidUpdate(prevProps, prevState) {
-    console.log()
+  componentDidUpdate(prevProps, prevState) {  
     if (prevProps.list !== this.props.list) {
       localStorage.setItem('contacts',JSON.stringify(this.props.list))
     }
